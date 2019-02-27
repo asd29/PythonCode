@@ -2,9 +2,9 @@ from django.db import models
 from django import forms
 # Create your models here.
 class Client(models.Model):
-	client_first_name = models.CharField(max_length=50)
-	client_last_name = models.CharField(max_length=50)
-	client_contact_number = models.CharField(max_length=10)
+	first_name = models.CharField(max_length=50)
+	last_name = models.CharField(max_length=50)
+	contact_number = models.CharField(max_length=10)
 
 class Registration(forms.Form):
 	first_name = forms.CharField(label='Enter First Name', min_length=4, max_length=50)

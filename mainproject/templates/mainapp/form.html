@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body><h2>Your Form Is submitted</h2>
+
+	<h5>Your Details are as</h5> <br>
+	<p>First Name : </p> {{users.first_name}}<br> <p> Last Name : </p>{{users.last_name}}<br> <p>Phone Number :</p>{{users.contact_number}}<br>
+<a href="{% url 'mainapp:ListPage' %}">view list</a>
+</body>
+</html>
