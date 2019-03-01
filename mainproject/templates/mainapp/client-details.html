@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client Details</title>
+</head>
+<body>
+	<table border=10>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Contact Number</th>
+		</tr>
+		<tr>
+<td><span>{{client.first_name}}</span></td>
+<td><span>{{client.last_name}}</span></td>
+<td><span>{{client.contact_number}}</span></td>
+<td><a href="{% url 'mainapp:updatedetails' client.id %}"> Update </a></td>
+</tr>
+</table>
+</body>
+</html>
